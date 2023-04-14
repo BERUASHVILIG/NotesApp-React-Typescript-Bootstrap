@@ -3,16 +3,15 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "./Components/Header";
 import NoteList from "./Components/NotesList";
-import { NotesProp } from "./models/note.model";
+import { NotesProp } from "./Interface-model/note.model";
 import CreateNotes from "./Components/CreateNotes";
-// import BasicExample from "./Components/Accordion";
 
 function App() {
   const [notes, setNotes] = useState<NotesProp[]>([
     {
       id: new Date().toString(),
-      title: "meetings",
-      text: "i am text",
+      title: "Lorem Ipsum",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic repudiandae aliquid nemo aliquam modi.  ",
       color: "#dfdfdf",
       date: new Date().toString(),
     },
